@@ -171,6 +171,10 @@ void UCGrab::FindPhysicsHandleComponent()
 		UE_LOG(LogTemp, Warning, TEXT("PhysicsHandle Component find"));
 
 	}
+	else {
+		return;
+	}
+	
 }
 
 

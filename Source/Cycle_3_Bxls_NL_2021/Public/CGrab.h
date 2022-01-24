@@ -27,7 +27,7 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	
+	UFUNCTION(BlueprintCallable, Category = "Grab")
 	FHitResult GetFirstPhysicsBodyInReach();
 
 	FVector PointLineStart() const;
@@ -53,7 +53,7 @@ public:
 
 private :
 
-	UPROPERTY(EditDefaultsOnly, Category = "Dist Propoerty")
+	UPROPERTY(EditDefaultsOnly, Category = "Dist Property")
 		float fltDistance;
 
 	UInputComponent* inputComponent;
